@@ -58,3 +58,15 @@ if(subahanValue<=34){
         }
             
         })
+        // --------Reset Button-------
+        document.getElementById("reset-btn").addEventListener("click",function(){
+            // -------Alhamdo Lillah-----------
+            document.getElementById("alhamdo-count").innerText=0;
+            alhamdoValue=0;
+            // ----------Allaho Akbar----------
+            document.getElementById("allaho-count").innerText=0;
+            allahoValue=0;
+            // --------Subahan Allah-----------
+            document.getElementById("subahan-count").innerText=0;
+            subahanValue=0;
+        })
