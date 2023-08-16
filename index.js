@@ -2,64 +2,53 @@
 const alhamdoCount=document.getElementById("alhamdo-count");
 const alhamdoString=alhamdoCount.innerText;
 let alhamdoValue=parseFloat(alhamdoString);
-let alhamdoResult=1;
 document.querySelector("#alhamdo-inc").addEventListener("click",function(){
-if(alhamdoResult<=33){
-    document.getElementById("alhamdo-count").innerText=alhamdoResult++;
-}else{
-    return alert("You Have Finished 33 Please Go To Next");
-}   
+if(alhamdoValue===33){
+    return alert("You Have Finished 33 Please Go To Next");  
+}document.getElementById("alhamdo-count").innerText=alhamdoValue+=1;   
 })
 // ---------Alhamdolillah Decriment-----
 document.querySelector("#alhamdo-dec").addEventListener("click",function(){
-    if(alhamdoResult>=0){
-        document.getElementById("alhamdo-count").innerText=alhamdoResult--;
-    }else{
-        return alert("Your Count Is Under 0 Please The Incriment Button");
-    }
+    if(alhamdoValue<=0){
+        return alert("Your Count Is Under 0 Please The Incriment Button"); 
+    }document.getElementById("alhamdo-count").innerText=alhamdoValue-=1;
         
     })
     // ---------Allaho Akbar Incriment-----
 const allahoCount=document.getElementById("allaho-count");
 const allahoString=allahoCount.innerText;
 let allahoValue=parseFloat(allahoString);
-let allahoResult=1;
 document.querySelector("#allaho-inc").addEventListener("click",function(){
-if(allahoResult<=33){
-    document.getElementById("allaho-count").innerText=allahoResult++;
-}else{
-    return alert("You Have Finished 33 Please Go To Next");
-}   
+if(allahoValue===33){
+    return alert("You Have Finished 33 Please Go To Next"); 
+}document.getElementById("allaho-count").innerText=allahoValue+=1;   
 })
     // ---------Allaho Akbar Decriment-----
     document.querySelector("#allaho-dec").addEventListener("click",function(){
-        if(allahoResult>=0){
-            document.getElementById("allaho-count").innerText=allahoResult--;
-        }else{
+        if(allahoValue<=0){       
             return alert("Your Count Is Under 0 Please The Incriment Button");
         }
+        document.getElementById("allaho-count").innerText=allahoValue-=1;
             
         })
             // ---------Subahan Allah Incriment-----
 const subahanCount=document.getElementById("subahan-count");
 const subahanString=subahanCount.innerText;
 let subahanValue=parseFloat(subahanString);
-let subahanResult=1;
 document.querySelector("#subahan-inc").addEventListener("click",function(){
-if(subahanResult<=34){
     
-    document.getElementById("subahan-count").innerText=subahanResult++;;
-}else{
-    return alert("You Have Finished 34 Please Go Again");
-}   
+if(subahanValue===34){
+    return alert("You Have Finished 34 Please Go Again");  
+} 
+document.getElementById("subahan-count").innerText=subahanValue+=1;  
 })
     // ---------Allaho Akbar Decriment-----
     document.querySelector("#subahan-dec").addEventListener("click",function(){
-        if(subahanResult>=0){
-            document.getElementById("subahan-count").innerText=subahanResult--;
-        }else{
-            return alert("Your Count Is Under 0 Please The Incriment Button");
+        
+        if(subahanValue<=0){
+             return alert("Your Count Is Under 0 Please The Incriment Button");
         }
+        document.getElementById("subahan-count").innerText=subahanValue-=1;
             
         })
         // --------Reset Button-------
